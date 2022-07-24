@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+            /* arr = [ 2, 3 ,7, 4,23];
+
+            const mai = arr.sort();
+            
+            console.log(mai); */
+            
+            class  Square {
+                constructor (_width) {
+                    this.width = _width;
+                    this.height = _width;
+                } 
+                static equals (a, b){
+                    return a.width * a.height === b.width * b.height;
+                }
+            }
+            
+            let square1 = new Square(8);
+            let square2 = new Square(9);
+
+            console.log(Square.equals(square1, square2));
+     </script>
+
+
+</body>
+</html>
